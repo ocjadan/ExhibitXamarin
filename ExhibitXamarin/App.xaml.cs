@@ -1,11 +1,13 @@
 ﻿using System;
+using ExhibitXamarin.DependencyInjection;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace ExhibitXamarin
 {
     public partial class App : Application
     {
+        public Lazy<AppCompositionRoot> AppCompositionRoot = new Lazy<AppCompositionRoot>();
+
         public App()
         {
             InitializeComponent();
